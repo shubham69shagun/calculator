@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="calc.png">
+    <title>Calculator</title>
+    
+
+    <style>
+        body{
+            background-color:#000000;
+        }
+        input{
+            font-size:larger;
+            text-align:right;
+            background-color:black;
+            color:white;
+            border-style: solid;
+            border-radius:7px;
+            border-width: 1px;
+            border-color:white;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+        .calculator{
+            height:75vh;
+            width:400px;
+            margin-left: auto;
+            margin-right:auto;
+            margin-top:75px;
+            /* border:1px solid black; */
+            
+        }
+        button{
+            width:100%;
+            height:100%;
+            font-size:large;
+            background-color:black;
+            color:white;
+        }
+        td{
+            width:20%;
+            height:95px;
+        }
+        table,tr{
+            width:100%;
+        }
+        button{
+            border-radius:7px;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        
+        <div style="width:88%;margin:0 auto;"> <input type="text" id="screen" style="width:98%;margin-top:10px;height:50px;"> </div>
+        <div style="width:90%;margin-left:auto;margin-right:auto;margin-top:5px;">
+            <table>
+                 <tr>
+                     <td><button>7</button></td>
+                     <td><button>8</button></td>
+                     <td><button>9</button></td>
+                     <td><button>/</button></td>
+                     <td><button style="background-color:lightblue;color:black;">C</button></td>
+                 </tr>
+                 <tr>
+                     <td><button>4</button></td>
+                     <td><button>5</button></td>
+                     <td><button>6</button></td>
+                     <td><button>*</button></td>
+                     <td><button>%</button></td>
+                 </tr>
+                 <tr>
+                     <td><button>1</button></td>
+                     <td><button>2</button></td>
+                     <td><button>3</button></td>
+                     <td rowspan="2" ><button style="height:195px;">+</button></td>
+                     <td><button>-</button></td>
+                 </tr>
+                 <tr>
+                     <td><button>0</button></td>
+                     <td><button>00</button></td>
+                     <td><button>.</button></td>
+                     <td><button style="background-color:red;">=</button></td>
+                 </tr>
+                 
+            </table>
+            <script src="script.js"></script>
+        </div>
+    </div>
+</body>
+</html>
